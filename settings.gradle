@@ -1,0 +1,6 @@
+rootProject.name = 'docker-prefetch'
+
+
+include "docker-prefetch-commons"
+include "docker-prefetch-scheduler"
+include "docker-prefetch-executor"
