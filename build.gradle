@@ -48,6 +48,8 @@ subprojects {
   }
 
   dependencies {
+	
+    compile "io.dropwizard:dropwizard-core:0.8.2"
 
     compile "org.apache.mesos:mesos:${mesosVer}"
 
