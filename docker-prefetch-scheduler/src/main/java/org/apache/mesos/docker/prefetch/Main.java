@@ -4,7 +4,6 @@ import com.google.inject.Guice;
 import com.google.inject.Injector;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.apache.mesos.hdfs.scheduler.HdfsSchedulerModule;
 
 /**
  * Main entry point for the Scheduler.
@@ -18,7 +17,7 @@ public final class Main {
   }
 
   private void start() {
-    Injector injector = Guice.createInjector(new HdfsSchedulerModule());
+    Injector injector = Guice.createInjector();
     getSchedulerThread(injector).start();
   }
 
