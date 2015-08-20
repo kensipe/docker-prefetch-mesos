@@ -12,8 +12,14 @@
          <Bug code="IJU" />
      </Not>
     </Match> -->
+    <Match>
 
-        <Match>
-            <Bug code="SnVI"/>
-        </Match>
+        <Class name="org.apache.mesos.docker.prefetch.Main$1"/>
+        <Method name="uncaughtException"/>
+        <Bug pattern="DM_EXIT"/>
+    </Match>
+
+    <Match>
+        <Bug code="SnVI"/>
+    </Match>
 </FindBugsFilter>
